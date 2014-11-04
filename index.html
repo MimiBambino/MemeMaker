@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0 maximum-scale=1.0'>
+    <meta name='mobile-web-app-capable' content='yes'>
+    <meta name='apple-mobile-web-app-capable' content='yes'>
+    <link rel='stylesheet' href='css/bootstrap.min.css'>
+    <script src='js/jQuery.js'></script>
+    <!--Google font for my name, footer and standard text-->
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400|Montez' rel='stylesheet' type='text/css'>
+    <link rel='stylesheet' href='css/template.css' type='text/css'></link>
+    <!--<link rel='stylesheet' href='css/style.css' type='text/css'></link>-->
+    <link rel='shortcut icon' href='images/favicon.ico'/>
+    <title>Project - Cynthia O'Donnell</title>
+  </head>
+    <body>
+<!--HEADER-->
+      <header class='text-center'>
+      </header>
+<!--Home view-->
+      <div class='container'>
+        <div class='row'>
+          <div id='instructionsDiv' class='col-md-12 text-center'>
+            <h2>Welcome to the custom meme maker!</h2>
+            <p>To make your custom meme Choose a file, Add some text, and Click "Download My Meme"</p>
+            <p>Have Fun!</p>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-md-offset-1 col-md-8'>
+            <div class='row'>
+              <div class='col-md-12'>
+                <input type='file' id='file'/>
+              </div>
+            </div>
+            <div class='row'>
+              <div id='image-container' class="col-md-12">
+                <canvas id='c' width='600' height='475'></canvas>
+              </div>
+            </div>
+          </div>
+          <div class='col-md-2 text-left'>
+            <span>Top Line:</span><br/>
+            <input id='topLineText' type='text'><br/>
+            <span>Bottom Line:</span><br/>
+            <input id='bottomLineText' type='text'><br/>
+              <a href='data:' id='saveBtn' class='btn img-rounded' download='myMeme.png'>Download My Meme!</a>
+          </div>
+        </div>
+      </div>
+<!--FOOTER-->
+      <div class='container'>
+        <footer class='row text-center'>
+          <div class='col-md-12 text-center'>
+            <p>Made with <span id='javascript'>JavaScript</span>.  Code available at <span><a target='_blank' href='https://github.com/MimiBambino/MemeMaker'><img class='github' src='images/GitHub.png' alt='GitHub'></a></span> 
+            </p>
+            <p>&copy; Cynthia O'Donnell 2014</p>
+          </div>
+        </footer>
+      </div>
+    <script src='js/template.js'></script>
+    <script src='js/playground.js'></script>
+  </body>
+</html>
